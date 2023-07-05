@@ -1,1 +1,2 @@
-#!/bin/bash/nls -apm
+#!/bin/bash/
+ls -apm
