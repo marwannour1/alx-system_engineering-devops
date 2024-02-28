@@ -2,4 +2,4 @@
 # File: 103-lets_parse_apache_logs.sh
 
 
-awk '{count[$1" "$9]++} END {for (entry in count) printf "%s %s\n", count[entry], entry}' apache-access.log | sort -nr
+awk '{count[$1" "$9]++} END {for (entry in count) printf "%s %s\n", count[entry], entry}' apache-access.log | sort -nr | awk '{$1=$1;print}'
