@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# File: while_best_school.sh
+
+
+counter=1
+
+while [[ $counter -lt 11 ]]
+do
+    if [[ $counter -eq 4 ]]
+    then
+        echo 'bad luck'
+
+    elif [[ $counter -eq 8 ]]
+    then
+        echo 'is your chance'
+
+    else
+        echo 'Best School'
+    fi
+
+    ((counter++))
+done
