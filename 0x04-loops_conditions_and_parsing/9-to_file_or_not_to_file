@@ -6,20 +6,20 @@ file="school"
 
 if [[ -e "$file" ]]
 then
-    echo "School file exists"
+    echo "school file exists"
 
     if [[ -s "$file" ]]
     then
-        echo "School file is not empty"
+        echo "school file is not empty"
 
     else
 
-        echo "School file is empty"
+        echo "school file is empty"
     fi
 
     if [[ -f "$file" ]]
     then
-        echo "School file is a regular file"
+        echo "school file is a regular file"
     fi
 
 
