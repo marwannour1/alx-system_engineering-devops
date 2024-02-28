@@ -14,7 +14,7 @@ then
 
     else
 
-        echo "school file file is empty"
+        echo "school file is empty"
     fi
 
     if [[ -f "$file" ]]
