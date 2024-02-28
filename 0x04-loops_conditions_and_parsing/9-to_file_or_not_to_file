@@ -8,15 +8,14 @@ if [[ -e "$file" ]]
 then
     echo "School file exists"
 
+    if [[ -f "$file" ]]
+    then
+        echo "School file is a regular file"
+    fi
 
-    if [[ -s $file ]]
+    if [[ -s "$file" ]]
     then
         echo "School file is not empty"
-
-        if [[ -f $file ]]
-        then
-            echo "School file is a regular file"
-        fi
 
     else
 
