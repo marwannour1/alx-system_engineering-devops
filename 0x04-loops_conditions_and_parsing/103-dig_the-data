@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# File: 103-lets_parse_apache_logs.sh
+
+
+
+awk '{count[$1" "$9]++} END {for (entry in count) print count[entry], entry}' apache-access.log | sort -nr
