@@ -2,6 +2,6 @@
 # File: 102-lets_parse_apache_logs.sh
 
 
-file="apache_logs.txt"
+file="apache_logs.log"
 
 awk '{print $1, $9}' "$file"
