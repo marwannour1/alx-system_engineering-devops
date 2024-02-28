@@ -4,7 +4,7 @@
 
 file="school"
 
-if [[ -e $file ]]
+if [[ -e "$file" ]]
 then
     echo "School file exists"
 
@@ -12,13 +12,17 @@ then
     if [[ -s $file ]]
     then
         echo "School file is not empty"
+
+        if [[ -f $file ]]
+        then
+            echo "School file is a regular file"
+        fi
+
     else
+
         echo "School file is empty"
     fi
-    if [[ -f $file ]]
-    then
-        echo "School file is a regular file"
-    fi
+
 else
     echo "School file does not exist"
 fi
