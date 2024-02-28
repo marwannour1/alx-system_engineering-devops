@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# File: while_best_school.sh
+
+
+counter=0
+
+while [[ $counter < 10]]
+do
+    echo 'Best School'
+    ((counter++))
+done
