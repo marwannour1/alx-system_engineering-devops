@@ -2,7 +2,7 @@
 # File: 8-for_ls.sh
 
 
-for file in $(ls)
+for file in *
 do
     result="${file#*-}"
     echo "$result"
