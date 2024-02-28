@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# File: 102-lets_parse_apache_logs.sh
+
+
+file="apache_logs.txt"
+
+awk '{print $1, $9}' "$file"
