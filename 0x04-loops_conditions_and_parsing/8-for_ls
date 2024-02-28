@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# File: 8-for_ls.sh
+
+
+for file in $(ls)
+do
+    result="${file#*-}"
+    echo "$result"
+done
