@@ -12,7 +12,7 @@ do
 
     elif [[ $counter -eq 8 ]]
     then
-        echo 'is your chance'
+        echo 'good luck'
 
     else
         echo 'Best School'
