@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # prints to infinity and beyond infinite times with a sleep of 2 seconds
 
-trap 'echo "I am invincible!"; exit 0' SIGTERM
+trap 'echo "I am invincible!!!"; exit 0' SIGTERM
 
 while true
 do
