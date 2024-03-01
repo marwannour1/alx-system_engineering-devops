@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# prints all bash processes running on your system
+
+ps aux --forest | grep bash
