@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# shows network connections
+
+netstat
