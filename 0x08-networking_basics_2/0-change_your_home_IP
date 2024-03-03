@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This script will change your home IP address to a new one
+
+
+# Define the new IP address
+NEW_LOCALHOST_IP="127.0.0.2"
+NEW_FACEBOOK_IP="8.8.8.8"
+
+
+HOSTS_FILE="/etc/hosts"
+
+
+# Change the IP address in the hosts file
+sed -i '/^127.0.0.1\s*localhost/d' $HOSTS_FILE
+sed -i '/facebook.com/d' $HOSTS_FILE
+
+echo "$NEW_LOCALHOST_IP localhost" >> $HOSTS_FILE
+echo "$NEW_FACEBOOK_IP facebook.com" >> $HOSTS_FILE
