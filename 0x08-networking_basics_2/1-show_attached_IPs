@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script will show the IP addresses that are attached to your machine
+
+ifconfig | grep "inet " | awk '{print $2}'
